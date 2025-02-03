@@ -1,0 +1,345 @@
+/* 
+  -----------------------------------
+  Barre de menu
+  2 colonnes - menu intégré
+  gauche
+  -----------------------------------
+*/
+body {
+	background-color: #8D9298;
+	background-image: url(img_css/pr-pbgtexture.jpg);
+	color: #333333;
+	font-family: "Garamond", Arial, sans-serif;
+	font-size: 100%;
+	padding: 20px;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 20px;
+	margin-left: 0;	
+}
+/* Définition du bandeau */
+.d1{
+    width: 1100px;
+    height: 300px;
+    margin: 0px auto;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+.conteneur{
+    max-width: 1100px;
+    margin: 0px auto;
+}
+.d2{
+    width: 100%;
+    height: 0px;
+    padding-top: 75%;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+.d1:hover, .d2:hover{
+    animation-play-state: paused;
+}
+@keyframes fondu{
+    0%{background-image: url(img_css/masterhead0.jpg);}
+    33.33%{background-image: url(img_css/masterhead1.jpg);}
+    66.67%{background-image: url(img_css/masterhead2.jpg);}
+    100%{background-image: url(img_css/masterhead3.jpg);}
+}
+
+	 
+
+#logo {
+	background-image: url(img_css/Logo_tipaza_beige.png);
+	background-repeat: no-repeat;
+	background-position: 40px 40px;
+	height: 298px;
+	}
+
+#videoplayer{
+	align-content: center;
+}
+video{
+	width: 800px;
+	height: auto;
+}
+/***** Flèche de retour en début de page ******/
+#scroll_to_top {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 100px;
+  right: 50px;
+}
+#scroll_to_top img {
+  width: 100px;
+}	
+/********CALQUE**********/
+#layout {
+	width: 1100px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	background-image: url(img_css/pr-shadow.jpg);
+	background-repeat: repeat-y;
+	box-shadow: 0 0 28px rgba(0,0,0,0.80),0 0 30px rgba(0,0,0,0.80);
+}
+/********MENU**********/
+
+li {
+list-style:none !important;
+color:#FFFFFF;
+padding:10px;
+FONT-FAMILY: "Garamond", Times, serif;
+font-weight: bold;
+font-size:16px;
+text-decoration:none;
+}
+nav ul {
+background-image: url(img_css/pr-mbar.jpg);
+padding:0;
+margin:0;
+display: flex;
+justify-content: center;
+
+}
+nav ul li {
+list-style: none;
+line-height:25px;
+float:left;
+background-image: url(img_css/pr-mbar.jpg);
+}
+nav ul li a {
+color:#FFFFFF;
+padding:10px;
+font-size:20px;
+text-decoration:none;
+}
+li a:hover {
+border-bottom:3px #FFFFFF solid;
+}
+nav ul li ul { display:none; } /* Rend le menu déroulant caché par défaut */
+nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+z-index:99999;
+display:list-item !important;
+position:absolute;
+margin-top:5px;
+margin-left:-10px;
+}
+nav ul li:hover ul li {
+float:none;
+}
+
+img{
+transition: transform .4s;
+}
+img:hover{
+-ms-transform: scale(2); /* IE 9 */
+-webkit-transform: scale(2); /* Safari 3-8 */
+transform: scale(2);
+}
+.vr-img{
+	align-content: center;
+	width: 100%;
+	align-items: center;
+}
+/********COLONNE**********/
+#columnwrapper {
+	width: 1100px;
+	background-image: url(img_css/fond.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 3em;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+/*colonnes "MAIN" et "SIDEBAR"
+  largeur totale
+	850 + 250 = 1100 */
+#mainbox {
+	float: left;
+	width: 850px;
+}
+#sidebox {
+	float: right;
+	width: 250px;
+}
+
+
+/********CONTENUS*********/
+
+/*Contenu de "Main"*/
+#maincontent {
+	padding: 0 30px 30px 30px;
+	font-size: 0.85;
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#maincontent p{
+	line-height: 2em;
+	margin: 8px 0 12px 0;
+}
+/*liens*/
+#maincontent p a:link {
+	color: #EC7063;
+}
+#maincontent p a:hover, #footer a:active, #footer a:focus {
+	background-color: #EC7063;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*lettrines*/
+#maincontent SPAN {
+	BACKGROUND-IMAGE: url(img_css/tipaza2.gif); 
+	background-repeat: no-repeat;
+	PADDING-RIGHT: 0em; 
+	PADDING-LEFT: 0em; 
+	FONT-SIZE: 3em; 
+	FLOAT: left;
+	PADDING-TOP: 0.5em; 
+	PADDING-BOTTOM: 0.1em; 
+	MARGIN: 0px 0.2em 0px 0px; 
+	WIDTH: 1em; 
+	COLOR: #3B0B17; 
+	LINE-HEIGHT: 1em; 
+	PADDING-TOP: 0.1em; 
+	FONT-FAMILY: "Garamond", Times, serif;  
+	TEXT-ALIGN: center; 
+}
+.callout {
+	float: left;
+	width: 80px;
+	margin: 6px 8px 0px 0px;
+	padding: 10px;
+	border: 1px solid #333333;
+	font-size: 2em;
+}
+/*couleur*/
+.D4595B {color: #D4595B}
+
+/*Côté*/
+#sidecontent {
+	font-size: 0.7em;
+	padding: 0 10px 10px 10px;
+	margin: 0 0 0 0;
+}
+#sidecontent p{
+	line-height: 1em;
+	margin: 12px 0;
+}
+/*liens*/
+#sidecontent p a:link {
+	color: #EC7063;
+}
+#sidecontent p a:hover, #footer a:active, #footer a:focus {
+	background-color: #4D4D4D;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/********ENTETES*******/
+h1 {
+	font-family: Adobe Garamond Pro, Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 2em;
+	letter-spacing: 0.3em;
+}
+h1, h2, h3, h4 {
+	line-height: normal;
+	font-family:Adobe Garamond Pro, Arial, Helvetica, sans-serif;
+}
+h2 {
+	margin: 1.5em 0 0 0;
+	font-size: 1.25em;
+}
+h3 {
+	margin: 1.5em 0 0 0;
+	font-size: 1.2em;
+}
+#sidecontent h3.topheading {
+	margin: 0;
+}
+
+/*Effecement calque flottant*/
+.clearit {
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+	clear: both;
+	display: flex;
+}
+
+/********GRAPHIQUE BAS*********/
+#bottom {
+	background-image: url(img_css/pr-footer.jpg);
+	background-repeat: no-repeat;
+	height: 48px;
+	background-position: left bottom;	
+}
+
+/***********PIED DE PAGE************/
+/*Contenant pied de page*/
+#footerbox {
+	width: 1100px;
+	margin: 0 auto;
+	font-size: 0.7em;
+	color: #EC7063;
+}
+/*intérieur pied de page*/
+#footer {
+	padding: 0 0 0 30px;
+}
+/******Passer les liens********/
+/*Contenant*/
+#skips {
+	position: absolute;
+	top: 6px;
+	right: 15px;
+	margin: 0 15px 0 0;
+}
+/*styles*/
+#skips a, #skips a:visited, #skips a:hover {
+	color: #8D9298;
+	cursor: default;
+	font-size: 0.1em;
+}
+.p7fix a:active, #skips a:active, #skips a:focus {
+	color: #FFFFFF;
+	background-color: #4a4a4a;
+	cursor: pointer;
+	font-size: .8em;
+}
+/*********STYLES LIENS********/
+#columnwrapper a:hover, #columnwrapper a:active, #columnwrapper a:focus, 
+#footer a:hover, #footer a:active, #footer a:focus {
+	background-color: #EC7063;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.p7TBMsubbox {
+	padding: 4px 0 24px 12px;
+}
+#alpha-1 a:hover {background-color: transparent;}
+
+a:link {
+	color: #EC7063;
+}
+a:visited {
+	color: #EC7063;
+}
+a:hover {
+	color: #EC7063;
+}
+a:active {
+	color: #EC7063;
+}
+h6 {
+	margin: 1.5em 0 0 0;
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
