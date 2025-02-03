@@ -1,7 +1,7 @@
 /* 
   -----------------------------------
   Barre de menu
-  2 colonnes - menu intégré
+  2 colonnes - menu int&eacute;gr&eacute;
   gauche
   -----------------------------------
 */
@@ -9,7 +9,7 @@ body {
 	background-color: #8D9298;
 	background-image: url(img_css/pr-pbgtexture.jpg);
 	color: #333333;
-	font-family: "Garamond", Arial, sans-serif;
+	font-family: &quot;Garamond&quot;, Arial, sans-serif;
 	font-size: 100%;
 	padding: 20px;
 	margin-top: 0px;
@@ -17,7 +17,7 @@ body {
 	margin-bottom: 20px;
 	margin-left: 0;	
 }
-/* Définition du bandeau */
+/* D&eacute;finition du bandeau */
 .d1{
     width: 1100px;
     height: 300px;
@@ -74,7 +74,7 @@ li {
 list-style:none !important;
 color:#FFFFFF;
 padding:10px;
-FONT-FAMILY: "Garamond", Times, serif;
+FONT-FAMILY: &quot;Garamond&quot;, Times, serif;
 font-weight: bold;
 font-size:16px;
 text-decoration:none;
@@ -99,7 +99,7 @@ text-decoration:none;
 li a:hover {
 border-bottom:3px #FFFFFF solid;
 }
-nav ul li ul { display:none; } /* Rend le menu déroulant caché par défaut */
+nav ul li ul { display:none; } /* Rend le menu d&eacute;roulant cach&eacute; par d&eacute;faut */
 nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
 z-index:99999;
 display:list-item !important;
@@ -110,7 +110,7 @@ margin-left:-10px;
 nav ul li:hover ul li {
 float:none;
 }
-/*****Image survolée*******/
+/*****Image survol&eacute;e*******/
 img{
 transition: transform .1s;
 }
@@ -137,7 +137,7 @@ img {
 	padding-bottom: 0;
 	padding-left: 0;
 }
-/*colonnes "MAIN" et "SIDEBAR"
+/*colonnes &quot;MAIN&quot; et &quot;SIDEBAR&quot;
   largeur totale
 	850 + 250 = 1100 */
 #mainbox {
@@ -152,7 +152,7 @@ img {
 
 /********CONTENUS*********/
 
-/*Contenu de "Main"*/
+/*Contenu de &quot;Main&quot;*/
 #maincontent {
 	padding: 0 30px 30px 30px;
 	font-size: 0.85;
@@ -186,7 +186,7 @@ img {
 	COLOR: #3B0B17; 
 	LINE-HEIGHT: 1em; 
 	PADDING-TOP: 0.1em; 
-	FONT-FAMILY: "Garamond", Times, serif;  
+	FONT-FAMILY: &quot;Garamond&quot;, Times, serif;  
 	TEXT-ALIGN: center; 
 }
 .callout {
@@ -200,7 +200,7 @@ img {
 /*couleur*/
 .D4595B {color: #D4595B}
 
-/*Côté*/
+/*Côt&eacute;*/
 #sidecontent {
 	font-size: 0.7em;
 	padding: 0 10px 10px 10px;
@@ -266,7 +266,7 @@ h3 {
 	font-size: 0.7em;
 	color: #EC7063;
 }
-/*intérieur pied de page*/
+/*int&eacute;rieur pied de page*/
 #footer {
 	padding: 0 0 0 30px;
 }
